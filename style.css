@@ -3,51 +3,128 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700italic,700);
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700);
 
+*{
+  box-sizing: border-box;
+}
 
-// Sidebar
-background: #252525;
+img{
+  width: 100%;
+  height: auto;
+}
 
-//Delimiter
-color: #353535
-
-
-//Input 
-
-background: #212121;
-
-
-header
-border #151515
+body{
+  font-size: 12px;
+  font-family: 'PT sans';
+}
 
 
-titre 
-#151515
+#sidebar-menu{
+  background: black;
+  float: left;
+  height:100vh;
+  padding: 20px;
+  position: fixed;
+  width: 200px;
+}
 
+  #sidebar-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+  }
 
-P 
-#444444
+#content{
+  background: yellow;
+  float: left;
+  margin: 0 0 0 200px;
+  width: 1000px;
+}
 
-Gros article 
-background-color: #ebe9da;
+  #header{
+    background: green;
+    overflow: hidden;
+  }
+    #logo{
+      background: blue;
+      float: left;
+      padding: 20px;
+      width: 290px;
+    }
 
+    #logo a{
+      display: block;
+    }
 
-Yellow box 
-#e1e0d7
+    #header .edito{
+      background: #fff;
+      float: left;
+      overflow: hidden;
+      width: 355px;
+    }
 
+    #header .edito .picture{
+      float: left;
+      width: 90px;
+    }
 
+    #main{
+      overflow: hidden;
+    }
 
-contour 
-#e1e0d7
+    #main-news{
+      float: left;
+      padding: 30px 0px 30px 20px;
+      width: 66%;
+    }
+      #top-stories{
+        background: blue;
+        overflow: hidden;
+      }
 
-Ligne rouge 
-#c93037
+      #top-stories .column{
+        background: red;
+        float: left;
+        padding: 10px;
+        width: 50%;
+      }
+      
+      #main-news hr{
+        margin: 10px;
+      }
+      #big-story{
+        background: green;
+        margin: 10px;
+      }
 
-time 
-#cc3333
+      #today-stories{
+        background: purple ;
+        overflow: hidden;
+      }
 
-Ligne interarticle 
-#d5d5d5;
+        #today-stories .column{
+          float: left;
+          padding: 10px;
+          width: 50%;
+        }
 
-
-Tabloid
-background: #f5f5f5
+    #side-news{
+      float: left;
+      padding: 30px 30px 30px 10px;
+      width: 34%;
+    }
+      #yellow-box{
+        background: ;
+      }
+      #other-stories{
+        background: ;
+      }
+  #tabloid{
+    background: red;
+    overflow: hidden;
+    padding:30px 20px; 
+  }
+    #tabloid .column{
+      float: left;
+      padding: 10px;
+      width:33%;
+    }
