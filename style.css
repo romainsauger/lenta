@@ -15,11 +15,13 @@ img{
 body{
   font-size: 12px;
   font-family: 'PT sans';
+  color:#444;
+  background: #e5e5e5;
 }
 
 
 #sidebar-menu{
-  background: black;
+  background: #252525;
   float: left;
   height:100vh;
   padding: 20px;
@@ -29,43 +31,97 @@ body{
 
   #sidebar-menu ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0; 
+    margin: 0 ;
+    padding: 10px 0 ; 
+    border-bottom: 1px solid #353535;
   }
+
+  #sidebar-menu ul:last-of-type{
+    border: none;
+  }
+
+  #sidebar-menu a {
+    text-decoration: none;
+    color:#fff;
+    line-height: 20px;
+    font-size: 14px;
+    display: block;
+  }  
+
+  #sidebar-menu ul:nth-of-type(3) a,
+  #sidebar-menu ul:nth-of-type(4) a{
+    color:#959595;
+  }
+
+  #sidebar-menu form input {
+    background: #212121;
+    color:#fff;
+    border: 1px solid #353535;
+  }  
+
+
 
 #content{
   background: yellow;
   float: left;
   margin: 0 0 0 200px;
   width: 1000px;
+  box-shadow: 0 0 15px #b1b1b1;  
+  
 }
 
   #header{
-    background: green;
+    background: #FFF;
     overflow: hidden;
+    height: 110px;
+    border-bottom: 5px solid #151515;
   }
     #logo{
-      background: blue;
       float: left;
-      padding: 20px;
+      padding: 20px 0px 0px 30px;
       width: 290px;
+      margin-right: 70px;
     }
 
     #logo a{
       display: block;
     }
 
+    #logo .date{
+      text-transform: uppercase;
+      color:#959595;
+    }
+
     #header .edito{
       background: #fff;
       float: left;
       overflow: hidden;
-      width: 355px;
+      width: 315px;
+      margin-top: 6px;
     }
 
-    #header .edito .picture{
-      float: left;
-      width: 90px;
-    }
+      #header .edito .picture{
+        float: left;
+        width: 90px;
+        margin-right: 10px;
+      }
+
+      #header .edito .info {
+        padding: 10px 0 0 0;
+      } 
+      #header .edito h3 {
+        margin: 0;
+      } 
+
+      #header .edito .author a{
+        text-decoration: none;
+        color:#c33;
+      }    
+
+      #header .edito h3 a{
+        text-decoration: none;
+        color:#151515;
+      }    
 
     #main{
       overflow: hidden;
